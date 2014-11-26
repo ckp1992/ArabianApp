@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F5679511A25879200536023 /* ApplicationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5679501A25879200536023 /* ApplicationContext.swift */; };
+		7F5679561A25A1A600536023 /* WorshipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5679541A25A1A600536023 /* WorshipViewController.swift */; };
+		7F5679571A25A1A600536023 /* WorshipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5679551A25A1A600536023 /* WorshipViewController.xib */; };
+		7F56795B1A25A64B00536023 /* WorShipDirectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5679591A25A64B00536023 /* WorShipDirectionViewController.swift */; };
+		7F56795C1A25A64B00536023 /* WorShipDirectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F56795A1A25A64B00536023 /* WorShipDirectionViewController.xib */; };
+		7F5679621A25A79100536023 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5679611A25A79100536023 /* BaseTableViewController.swift */; };
+		7F5679651A25A81100536023 /* MuslimStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5679631A25A81100536023 /* MuslimStoryViewController.swift */; };
+		7F5679661A25A81100536023 /* MuslimStoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5679641A25A81100536023 /* MuslimStoryViewController.xib */; };
+		7F56796B1A25A8FD00536023 /* MosqueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5679691A25A8FD00536023 /* MosqueViewController.swift */; };
+		7F56796C1A25A8FD00536023 /* MosqueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F56796A1A25A8FD00536023 /* MosqueViewController.xib */; };
+		7F56796F1A25A93200536023 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F56796D1A25A93200536023 /* AboutViewController.swift */; };
+		7F5679701A25A93200536023 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F56796E1A25A93200536023 /* AboutViewController.xib */; };
 		7F83F0751A2576760005A115 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F83F0741A2576760005A115 /* AppDelegate.swift */; };
 		7F83F0771A2576760005A115 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F83F0761A2576760005A115 /* ViewController.swift */; };
 		7F83F07A1A2576760005A115 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F83F0781A2576760005A115 /* Main.storyboard */; };
@@ -26,6 +38,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F5679501A25879200536023 /* ApplicationContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationContext.swift; sourceTree = "<group>"; };
+		7F5679541A25A1A600536023 /* WorshipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorshipViewController.swift; sourceTree = "<group>"; };
+		7F5679551A25A1A600536023 /* WorshipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorshipViewController.xib; sourceTree = "<group>"; };
+		7F5679591A25A64B00536023 /* WorShipDirectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorShipDirectionViewController.swift; sourceTree = "<group>"; };
+		7F56795A1A25A64B00536023 /* WorShipDirectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorShipDirectionViewController.xib; sourceTree = "<group>"; };
+		7F5679611A25A79100536023 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		7F5679631A25A81100536023 /* MuslimStoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuslimStoryViewController.swift; sourceTree = "<group>"; };
+		7F5679641A25A81100536023 /* MuslimStoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MuslimStoryViewController.xib; sourceTree = "<group>"; };
+		7F5679691A25A8FD00536023 /* MosqueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MosqueViewController.swift; sourceTree = "<group>"; };
+		7F56796A1A25A8FD00536023 /* MosqueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MosqueViewController.xib; sourceTree = "<group>"; };
+		7F56796D1A25A93200536023 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		7F56796E1A25A93200536023 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		7F83F06F1A2576760005A115 /* ArabianApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArabianApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F83F0731A2576760005A115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F83F0741A2576760005A115 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +80,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F5679521A2587B700536023 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				7F5679501A25879200536023 /* ApplicationContext.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		7F5679531A25A15600536023 /* 1 */ = {
+			isa = PBXGroup;
+			children = (
+				7F5679541A25A1A600536023 /* WorshipViewController.swift */,
+				7F5679551A25A1A600536023 /* WorshipViewController.xib */,
+			);
+			name = 1;
+			sourceTree = "<group>";
+		};
+		7F5679581A25A5CD00536023 /* 2 */ = {
+			isa = PBXGroup;
+			children = (
+				7F5679591A25A64B00536023 /* WorShipDirectionViewController.swift */,
+				7F56795A1A25A64B00536023 /* WorShipDirectionViewController.xib */,
+			);
+			name = 2;
+			sourceTree = "<group>";
+		};
+		7F56795D1A25A6EA00536023 /* 3 */ = {
+			isa = PBXGroup;
+			children = (
+				7F5679631A25A81100536023 /* MuslimStoryViewController.swift */,
+				7F5679641A25A81100536023 /* MuslimStoryViewController.xib */,
+			);
+			name = 3;
+			sourceTree = "<group>";
+		};
+		7F56795E1A25A72000536023 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7F5679611A25A79100536023 /* BaseTableViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		7F5679671A25A84900536023 /* 4 */ = {
+			isa = PBXGroup;
+			children = (
+				7F5679691A25A8FD00536023 /* MosqueViewController.swift */,
+				7F56796A1A25A8FD00536023 /* MosqueViewController.xib */,
+			);
+			name = 4;
+			sourceTree = "<group>";
+		};
+		7F5679681A25A85200536023 /* 5 */ = {
+			isa = PBXGroup;
+			children = (
+				7F56796D1A25A93200536023 /* AboutViewController.swift */,
+				7F56796E1A25A93200536023 /* AboutViewController.xib */,
+			);
+			name = 5;
+			sourceTree = "<group>";
+		};
 		7F83F0661A2576760005A115 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +162,13 @@
 		7F83F0711A2576760005A115 /* ArabianApp */ = {
 			isa = PBXGroup;
 			children = (
+				7F56795E1A25A72000536023 /* Base */,
+				7F5679521A2587B700536023 /* Util */,
+				7F5679681A25A85200536023 /* 5 */,
+				7F5679671A25A84900536023 /* 4 */,
+				7F56795D1A25A6EA00536023 /* 3 */,
+				7F5679581A25A5CD00536023 /* 2 */,
+				7F5679531A25A15600536023 /* 1 */,
 				7F83F0741A2576760005A115 /* AppDelegate.swift */,
 				7F83F0761A2576760005A115 /* ViewController.swift */,
 				7F83F0781A2576760005A115 /* Main.storyboard */,
@@ -193,7 +285,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F83F07A1A2576760005A115 /* Main.storyboard in Resources */,
+				7F5679571A25A1A600536023 /* WorshipViewController.xib in Resources */,
+				7F5679701A25A93200536023 /* AboutViewController.xib in Resources */,
 				7F83F07F1A2576760005A115 /* LaunchScreen.xib in Resources */,
+				7F56796C1A25A8FD00536023 /* MosqueViewController.xib in Resources */,
+				7F5679661A25A81100536023 /* MuslimStoryViewController.xib in Resources */,
+				7F56795C1A25A64B00536023 /* WorShipDirectionViewController.xib in Resources */,
 				7F83F07C1A2576760005A115 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +309,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5679621A25A79100536023 /* BaseTableViewController.swift in Sources */,
 				7F83F0771A2576760005A115 /* ViewController.swift in Sources */,
+				7F5679561A25A1A600536023 /* WorshipViewController.swift in Sources */,
+				7F56796F1A25A93200536023 /* AboutViewController.swift in Sources */,
+				7F5679511A25879200536023 /* ApplicationContext.swift in Sources */,
+				7F5679651A25A81100536023 /* MuslimStoryViewController.swift in Sources */,
 				7F83F0751A2576760005A115 /* AppDelegate.swift in Sources */,
+				7F56796B1A25A8FD00536023 /* MosqueViewController.swift in Sources */,
+				7F56795B1A25A64B00536023 /* WorShipDirectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +393,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -325,7 +429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -405,6 +509,7 @@
 				7F83F0901A2576760005A115 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F83F0911A2576760005A115 /* Build configuration list for PBXNativeTarget "ArabianAppTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +518,7 @@
 				7F83F0931A2576760005A115 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
