@@ -13,7 +13,55 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgO-7g-coo">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="J50-A9-9KS"/>
+                        <constraint firstAttribute="height" constant="21" id="SUS-ZD-LP2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="J50-A9-9KS"/>
+                            <exclude reference="SUS-ZD-LP2"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="J50-A9-9KS"/>
+                            <include reference="SUS-ZD-LP2"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="0.54070210987188561" blue="0.13769797503273462" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="MgO-7g-coo" secondAttribute="centerX" id="49O-vC-esa"/>
+                <constraint firstAttribute="centerY" secondItem="MgO-7g-coo" secondAttribute="centerY" constant="268.5" id="ozs-jo-h47">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="MgO-7g-coo"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="49O-vC-esa"/>
+                    <exclude reference="ozs-jo-h47"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="MgO-7g-coo"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="49O-vC-esa"/>
+                    <include reference="ozs-jo-h47"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

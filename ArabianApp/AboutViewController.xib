@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <objects>
@@ -13,7 +14,55 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoH-AD-zlq">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="SPi-gZ-DZO"/>
+                        <constraint firstAttribute="height" constant="21" id="bbK-HM-2Ou"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="SPi-gZ-DZO"/>
+                            <exclude reference="bbK-HM-2Ou"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="SPi-gZ-DZO"/>
+                            <include reference="bbK-HM-2Ou"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="0.40830336116469357" green="0.73085076414754402" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="hoH-AD-zlq" secondAttribute="centerY" constant="68.5" id="A8D-FT-ulL">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="centerX" secondItem="hoH-AD-zlq" secondAttribute="centerX" id="BbK-bo-bfY"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="hoH-AD-zlq"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="A8D-FT-ulL"/>
+                    <exclude reference="BbK-bo-bfY"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="hoH-AD-zlq"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="A8D-FT-ulL"/>
+                    <include reference="BbK-bo-bfY"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

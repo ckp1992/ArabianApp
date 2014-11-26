@@ -75,37 +75,91 @@ class ViewController: UIViewController {
     func switchController(#index : Int){
         var newController = childArray[index];
         var curController = childArray[curIndex]
+        var offset:Int = 320
+        
+        newController.view.frame = self.view.frame
+        
+        self.addChildViewController(newController)
+        self.view.insertSubview(newController.view, atIndex: 0)
         
         if(curController != newController){
-            
-            curController.removeFromParentViewController()
-            curController.view .removeFromSuperview()
-            
-            self.addChildViewController(newController)
-            self.view.insertSubview(newController.view, atIndex: 0)
-            
+//            if index < curIndex {
+//                offset = -offset
+//            }
+//            var CGOffset:CGFloat = CGFloat(offset)
+//            
+//            newController.view.center.x += CGOffset
+//            UIView.animateWithDuration(
+//                1,
+//                delay: 0,
+//                options: UIViewAnimationOptions.CurveEaseOut,
+//                animations: { () -> Void in
+//                    newController.view.center.x -= 320
+//                    curController.view.transform = CGM
+//                },
+//                completion: { (Bool) -> Void in
+//                    curController.removeFromParentViewController()
+//                    curController.view .removeFromSuperview()
+//
+//            })
+
+            //旧view移出动画
+            if index > curIndex {
+                newController.view.center.x += 320
+                UIView.animateWithDuration(
+                    0.2,
+                    delay: 0,
+                    options: UIViewAnimationOptions.CurveEaseOut,
+                    animations: { () -> Void in
+                        newController.view.center.x -= 320
+                        curController.view.center.x -= 320
+                        self.view.userInteractionEnabled = false
+                    },
+                    completion: { (Bool) -> Void in
+                        curController.removeFromParentViewController()
+                        curController.view .removeFromSuperview()
+                        self.view.userInteractionEnabled = true
+                        
+                })
+            } else {
+                newController.view.center.x -= 320
+                UIView.animateWithDuration(
+                    0.2,
+                    delay: 0,
+                    options: UIViewAnimationOptions.CurveEaseOut,
+                    animations: { () -> Void in
+                        newController.view.center.x += 320
+                        curController.view.center.x += 320
+                        self.view.userInteractionEnabled = false
+                    },
+                    completion: { (Bool) -> Void in
+                        curController.removeFromParentViewController()
+                        curController.view .removeFromSuperview()
+                        self.view.userInteractionEnabled = true
+                })
+            }//if index
+        
             curIndex = index
-        }
+            
+        }//if curController
     }
     
     @IBAction func swichingControllers(sender: UIButton) {
-//        if(sender.titleLabel?.text == "礼拜时间"){
-//            switchController(index: 0)
-//        
-//        }
-//        if(sender.titleLabel?.text == "礼拜方向"){
-//            switchController(index: 1)
-//        }
-//        if(sender.titleLabel?.text == "穆斯林故事"){
-//            switchController(index: 2)
-//        }
-//        if(sender.titleLabel?.text == "中国清真寺"){
-//            switchController(index: 3)
-//        }
-//        if(sender.titleLabel?.text == "关于"){
-//            switchController(index: 4)
-//        }
-        ApplicationContext.pushToState("About")
+        if(sender.titleLabel?.text == "礼拜时间"){
+            switchController(index: 0)
+        }
+        if(sender.titleLabel?.text == "礼拜方向"){
+            switchController(index: 1)
+        }
+        if(sender.titleLabel?.text == "穆斯林故事"){
+            switchController(index: 2)
+        }
+        if(sender.titleLabel?.text == "中国清真寺"){
+            switchController(index: 3)
+        }
+        if(sender.titleLabel?.text == "关于"){
+            switchController(index: 4)
+        }
     }
     
     

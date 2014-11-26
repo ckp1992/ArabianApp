@@ -14,7 +14,55 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kve-ri-9zo">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="hlk-0l-f1y"/>
+                        <constraint firstAttribute="height" constant="21" id="qUU-fq-cr0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hlk-0l-f1y"/>
+                            <exclude reference="qUU-fq-cr0"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="hlk-0l-f1y"/>
+                            <include reference="qUU-fq-cr0"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="0.33121010550000002" blue="0.40470857729999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="Kve-ri-9zo" secondAttribute="centerX" id="K7N-6O-1Im"/>
+                <constraint firstAttribute="centerY" secondItem="Kve-ri-9zo" secondAttribute="centerY" constant="215.5" id="S5B-yA-uHi">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Kve-ri-9zo"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="K7N-6O-1Im"/>
+                    <exclude reference="S5B-yA-uHi"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Kve-ri-9zo"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="K7N-6O-1Im"/>
+                    <include reference="S5B-yA-uHi"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>
