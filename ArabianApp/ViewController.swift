@@ -75,7 +75,7 @@ class ViewController: UIViewController {
     func switchController(#index : Int){
         var newController = childArray[index];
         var curController = childArray[curIndex]
-        var offset:Int = 320
+        var offset:CGFloat = CGFloat(self.view.frame.size.width)
         
         newController.view.frame = self.view.frame
         
@@ -105,14 +105,14 @@ class ViewController: UIViewController {
 
             //旧view移出动画
             if index > curIndex {
-                newController.view.center.x += 320
+                newController.view.center.x += offset
                 UIView.animateWithDuration(
-                    0.2,
+                    0.15,
                     delay: 0,
                     options: UIViewAnimationOptions.CurveEaseOut,
                     animations: { () -> Void in
-                        newController.view.center.x -= 320
-                        curController.view.center.x -= 320
+                        newController.view.center.x -= offset
+                        curController.view.center.x -= offset
                         self.view.userInteractionEnabled = false
                     },
                     completion: { (Bool) -> Void in
@@ -122,14 +122,14 @@ class ViewController: UIViewController {
                         
                 })
             } else {
-                newController.view.center.x -= 320
+                newController.view.center.x -= offset
                 UIView.animateWithDuration(
-                    0.2,
+                    0.15,
                     delay: 0,
                     options: UIViewAnimationOptions.CurveEaseOut,
                     animations: { () -> Void in
-                        newController.view.center.x += 320
-                        curController.view.center.x += 320
+                        newController.view.center.x += offset
+                        curController.view.center.x += offset
                         self.view.userInteractionEnabled = false
                     },
                     completion: { (Bool) -> Void in
