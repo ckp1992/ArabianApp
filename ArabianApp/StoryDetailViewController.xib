@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MosqueViewController" customModule="ArabianApp" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoryDetailViewController" customModule="ArabianApp" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -14,58 +15,56 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXS-mO-EG6">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ube-7I-PnM">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="LYR-BN-5pe"/>
-                        <constraint firstAttribute="width" constant="113" id="eIq-sE-Ot0"/>
+                        <constraint firstAttribute="width" constant="30" id="6pG-mX-ixi"/>
+                        <constraint firstAttribute="height" constant="30" id="xth-RG-RJh">
+                            <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                        </constraint>
                     </constraints>
-                    <state key="normal" title="中国清真寺点击">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="返回">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <variation key="default">
                         <mask key="constraints">
-                            <exclude reference="LYR-BN-5pe"/>
-                            <exclude reference="eIq-sE-Ot0"/>
+                            <exclude reference="6pG-mX-ixi"/>
+                            <exclude reference="xth-RG-RJh"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact">
                         <mask key="constraints">
-                            <include reference="LYR-BN-5pe"/>
-                            <include reference="eIq-sE-Ot0"/>
+                            <include reference="6pG-mX-ixi"/>
+                            <include reference="xth-RG-RJh"/>
                         </mask>
                     </variation>
                     <connections>
-                        <action selector="clickSimulate:" destination="-1" eventType="touchUpInside" id="k0m-O6-cab"/>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="wBO-da-IVH"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="0.28442758637592669" green="1" blue="0.77270827173591972" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.94658148106079953" green="0.87075101948033673" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="centerY" secondItem="DXS-mO-EG6" secondAttribute="centerY" constant="-37" id="Sgi-3q-Wr9">
-                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                </constraint>
-                <constraint firstAttribute="centerX" secondItem="DXS-mO-EG6" secondAttribute="centerX" constant="-17.5" id="cQP-ct-PiP">
-                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                </constraint>
+                <constraint firstItem="ube-7I-PnM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="GiQ-WQ-Orx"/>
+                <constraint firstItem="ube-7I-PnM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="41" id="RWU-nt-lko"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
-                    <exclude reference="DXS-mO-EG6"/>
+                    <exclude reference="ube-7I-PnM"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="Sgi-3q-Wr9"/>
-                    <exclude reference="cQP-ct-PiP"/>
+                    <exclude reference="GiQ-WQ-Orx"/>
+                    <exclude reference="RWU-nt-lko"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
-                    <include reference="DXS-mO-EG6"/>
+                    <include reference="ube-7I-PnM"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="Sgi-3q-Wr9"/>
-                    <include reference="cQP-ct-PiP"/>
+                    <include reference="GiQ-WQ-Orx"/>
+                    <include reference="RWU-nt-lko"/>
                 </mask>
             </variation>
         </view>

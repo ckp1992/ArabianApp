@@ -19,6 +19,10 @@
 		7F56796C1A25A8FD00536023 /* MosqueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F56796A1A25A8FD00536023 /* MosqueViewController.xib */; };
 		7F56796F1A25A93200536023 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F56796D1A25A93200536023 /* AboutViewController.swift */; };
 		7F5679701A25A93200536023 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F56796E1A25A93200536023 /* AboutViewController.xib */; };
+		7F5679761A25FB0700536023 /* StoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5679741A25FB0700536023 /* StoryDetailViewController.swift */; };
+		7F5679771A25FB0700536023 /* StoryDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5679751A25FB0700536023 /* StoryDetailViewController.xib */; };
+		7F56797A1A25FF3500536023 /* MosqueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5679781A25FF3500536023 /* MosqueDetailViewController.swift */; };
+		7F56797B1A25FF3500536023 /* MosqueDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5679791A25FF3500536023 /* MosqueDetailViewController.xib */; };
 		7F83F0751A2576760005A115 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F83F0741A2576760005A115 /* AppDelegate.swift */; };
 		7F83F0771A2576760005A115 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F83F0761A2576760005A115 /* ViewController.swift */; };
 		7F83F07A1A2576760005A115 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F83F0781A2576760005A115 /* Main.storyboard */; };
@@ -50,6 +54,10 @@
 		7F56796A1A25A8FD00536023 /* MosqueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MosqueViewController.xib; sourceTree = "<group>"; };
 		7F56796D1A25A93200536023 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		7F56796E1A25A93200536023 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		7F5679741A25FB0700536023 /* StoryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryDetailViewController.swift; sourceTree = "<group>"; };
+		7F5679751A25FB0700536023 /* StoryDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryDetailViewController.xib; sourceTree = "<group>"; };
+		7F5679781A25FF3500536023 /* MosqueDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MosqueDetailViewController.swift; sourceTree = "<group>"; };
+		7F5679791A25FF3500536023 /* MosqueDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MosqueDetailViewController.xib; sourceTree = "<group>"; };
 		7F83F06F1A2576760005A115 /* ArabianApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArabianApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F83F0731A2576760005A115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F83F0741A2576760005A115 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +119,8 @@
 			children = (
 				7F5679631A25A81100536023 /* MuslimStoryViewController.swift */,
 				7F5679641A25A81100536023 /* MuslimStoryViewController.xib */,
+				7F5679741A25FB0700536023 /* StoryDetailViewController.swift */,
+				7F5679751A25FB0700536023 /* StoryDetailViewController.xib */,
 			);
 			name = 3;
 			sourceTree = "<group>";
@@ -128,6 +138,8 @@
 			children = (
 				7F5679691A25A8FD00536023 /* MosqueViewController.swift */,
 				7F56796A1A25A8FD00536023 /* MosqueViewController.xib */,
+				7F5679781A25FF3500536023 /* MosqueDetailViewController.swift */,
+				7F5679791A25FF3500536023 /* MosqueDetailViewController.xib */,
 			);
 			name = 4;
 			sourceTree = "<group>";
@@ -285,12 +297,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F83F07A1A2576760005A115 /* Main.storyboard in Resources */,
+				7F56797B1A25FF3500536023 /* MosqueDetailViewController.xib in Resources */,
 				7F5679571A25A1A600536023 /* WorshipViewController.xib in Resources */,
 				7F5679701A25A93200536023 /* AboutViewController.xib in Resources */,
 				7F83F07F1A2576760005A115 /* LaunchScreen.xib in Resources */,
 				7F56796C1A25A8FD00536023 /* MosqueViewController.xib in Resources */,
 				7F5679661A25A81100536023 /* MuslimStoryViewController.xib in Resources */,
 				7F56795C1A25A64B00536023 /* WorShipDirectionViewController.xib in Resources */,
+				7F5679771A25FB0700536023 /* StoryDetailViewController.xib in Resources */,
 				7F83F07C1A2576760005A115 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,7 +324,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F5679621A25A79100536023 /* BaseTableViewController.swift in Sources */,
+				7F5679761A25FB0700536023 /* StoryDetailViewController.swift in Sources */,
 				7F83F0771A2576760005A115 /* ViewController.swift in Sources */,
+				7F56797A1A25FF3500536023 /* MosqueDetailViewController.swift in Sources */,
 				7F5679561A25A1A600536023 /* WorshipViewController.swift in Sources */,
 				7F56796F1A25A93200536023 /* AboutViewController.swift in Sources */,
 				7F5679511A25879200536023 /* ApplicationContext.swift in Sources */,

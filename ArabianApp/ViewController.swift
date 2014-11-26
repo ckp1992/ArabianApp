@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var childArray : [UIViewController]!
     var curIndex : Int!
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.hidden = true
@@ -33,6 +34,10 @@ class ViewController: UIViewController {
         }
     }
     
+    override func viewDidLayoutSubviews() {
+        NSLog("---FFF--%@",self.view.subviews)
+    }
+    
     func initChildViewControllers(){
         
         curIndex = 0
@@ -42,6 +47,7 @@ class ViewController: UIViewController {
         self.addChildViewController(worshipViewController)
         self.view.insertSubview(worshipViewController.view, atIndex: 0)
         childArray.append(worshipViewController)
+        addConstraintsToParent(firstItem: worshipViewController.view)
         
         //第二页 礼拜朝向
         var worShipDirectionViewController : WorShipDirectionViewController = WorShipDirectionViewController(nibName: "WorShipDirectionViewController", bundle: nil)
@@ -61,14 +67,46 @@ class ViewController: UIViewController {
     }
     
     func addConstraintsToParent(#firstItem : UIView!){
+        var height = self.view.frame.size.height
+        var width = self.view.frame.size.width
+        
+        firstItem.setTranslatesAutoresizingMaskIntoConstraints(false)
+        
         self.view.addConstraint(NSLayoutConstraint(
             item:firstItem,
-            attribute: NSLayoutAttribute.Bottom,
+            attribute: NSLayoutAttribute.CenterX,
             relatedBy: NSLayoutRelation.Equal,
             toItem: self.view,
-            attribute: NSLayoutAttribute.Bottom,
+            attribute: NSLayoutAttribute.CenterX,
             multiplier: 1.0,
             constant: 0)
+        )
+        self.view.addConstraint(NSLayoutConstraint(
+            item:firstItem,
+            attribute: NSLayoutAttribute.Top,
+            relatedBy: NSLayoutRelation.Equal,
+            toItem: self.view,
+            attribute: NSLayoutAttribute.Top,
+            multiplier: 1.0,
+            constant: 0)
+        )
+        firstItem.addConstraint(NSLayoutConstraint(
+            item:firstItem,
+            attribute: NSLayoutAttribute.Height,
+            relatedBy: NSLayoutRelation.Equal,
+            toItem: nil,
+            attribute: NSLayoutAttribute.NotAnAttribute,
+            multiplier: 1.0,
+            constant: height - width * 0.2)
+        )
+        firstItem.addConstraint(NSLayoutConstraint(
+            item:firstItem,
+            attribute: NSLayoutAttribute.Width,
+            relatedBy: NSLayoutRelation.Equal,
+            toItem: nil,
+            attribute: NSLayoutAttribute.NotAnAttribute,
+            multiplier: 1.0,
+            constant:width)
         )
     }
     
@@ -81,45 +119,47 @@ class ViewController: UIViewController {
         
         self.addChildViewController(newController)
         self.view.insertSubview(newController.view, atIndex: 0)
+        addConstraintsToParent(firstItem: newController.view)
         
         if(curController != newController){
             
-            //区分动画方向
-            if index > curIndex {
-                newController.view.center.x += offset
-                UIView.animateWithDuration(
-                    0.15,
-                    delay: 0,
-                    options: UIViewAnimationOptions.CurveEaseOut,
-                    animations: { () -> Void in
-                        newController.view.center.x -= offset
-                        curController.view.center.x -= offset
-                        self.view.userInteractionEnabled = false
-                    },
-                    completion: { (Bool) -> Void in
-                        curController.removeFromParentViewController()
-                        curController.view .removeFromSuperview()
-                        self.view.userInteractionEnabled = true
-                        
-                })
-            } else {
-                newController.view.center.x -= offset
-                UIView.animateWithDuration(
-                    0.15,
-                    delay: 0,
-                    options: UIViewAnimationOptions.CurveEaseOut,
-                    animations: { () -> Void in
-                        newController.view.center.x += offset
-                        curController.view.center.x += offset
-                        self.view.userInteractionEnabled = false
-                    },
-                    completion: { (Bool) -> Void in
-                        curController.removeFromParentViewController()
-                        curController.view .removeFromSuperview()
-                        self.view.userInteractionEnabled = true
-                })
-            }//if index
-        
+//            //区分动画方向
+//            if index > curIndex {
+//                newController.view.center.x += offset
+//                UIView.animateWithDuration(
+//                    0.2,
+//                    delay: 0,
+//                    options: UIViewAnimationOptions.CurveEaseOut,
+//                    animations: { () -> Void in
+//                        newController.view.center.x -= offset
+//                        curController.view.center.x -= offset
+//                        self.view.userInteractionEnabled = false
+//                    },
+//                    completion: { (Bool) -> Void in
+//                        curController.removeFromParentViewController()
+//                        curController.view .removeFromSuperview()
+//                        self.view.userInteractionEnabled = true
+//                        
+//                })
+//            } else {
+//                newController.view.center.x -= offset
+//                UIView.animateWithDuration(
+//                    0.2,
+//                    delay: 0,
+//                    options: UIViewAnimationOptions.CurveEaseOut,
+//                    animations: { () -> Void in
+//                        newController.view.center.x += offset
+//                        curController.view.center.x += offset
+//                        self.view.userInteractionEnabled = false
+//                    },
+//                    completion: { (Bool) -> Void in
+//                        curController.removeFromParentViewController()
+//                        curController.view .removeFromSuperview()
+//                        self.view.userInteractionEnabled = true
+//                })
+//            }//if index
+            curController.removeFromParentViewController()
+            curController.view .removeFromSuperview()
             curIndex = index
             
         }//if curController

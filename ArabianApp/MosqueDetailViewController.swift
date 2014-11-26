@@ -1,5 +1,5 @@
 //
-//  MosqueViewController.swift
+//  MosqueDetailViewController.swift
 //  ArabianApp
 //
 //  Created by 陈鲲鹏 on 14/11/26.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class MosqueViewController: UIViewController {
+class MosqueDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -21,9 +20,8 @@ class MosqueViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    @IBAction func clickSimulate(sender: AnyObject) {
-        ApplicationContext.pushToState("MosqueDetail")
+    @IBAction func back(sender: AnyObject) {
+        ApplicationContext.popBack()
     }
 
     /*

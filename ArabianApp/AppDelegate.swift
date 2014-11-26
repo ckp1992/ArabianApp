@@ -54,8 +54,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let xibName=state+"ViewController"
         let controllerName="ArabianApp."+xibName
         
-        println("controller:\(controllerName)")
-        
         var classType: AnyObject.Type=NSClassFromString(controllerName)
         var nsobjectype : UIViewController.Type = classType as UIViewController.Type
         var viewController: UIViewController = nsobjectype(nibName: xibName, bundle: nil)

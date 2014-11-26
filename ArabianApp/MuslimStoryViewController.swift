@@ -15,12 +15,15 @@ class MuslimStoryViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func cellClicsimulated(sender: AnyObject) {
+        ApplicationContext.pushToState("StoryDetail")
+    }
 
     /*
     // MARK: - Navigation
