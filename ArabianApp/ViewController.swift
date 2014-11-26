@@ -89,21 +89,23 @@ class ViewController: UIViewController {
     }
     
     @IBAction func swichingControllers(sender: UIButton) {
-        if(sender.titleLabel?.text == "礼拜时间"){
-            switchController(index: 0)
-        }
-        if(sender.titleLabel?.text == "礼拜方向"){
-            switchController(index: 1)
-        }
-        if(sender.titleLabel?.text == "穆斯林故事"){
-            switchController(index: 2)
-        }
-        if(sender.titleLabel?.text == "中国清真寺"){
-            switchController(index: 3)
-        }
-        if(sender.titleLabel?.text == "关于"){
-            switchController(index: 4)
-        }
+//        if(sender.titleLabel?.text == "礼拜时间"){
+//            switchController(index: 0)
+//        
+//        }
+//        if(sender.titleLabel?.text == "礼拜方向"){
+//            switchController(index: 1)
+//        }
+//        if(sender.titleLabel?.text == "穆斯林故事"){
+//            switchController(index: 2)
+//        }
+//        if(sender.titleLabel?.text == "中国清真寺"){
+//            switchController(index: 3)
+//        }
+//        if(sender.titleLabel?.text == "关于"){
+//            switchController(index: 4)
+//        }
+        ApplicationContext.pushToState("About")
     }
     
     

@@ -48,21 +48,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     //Push
     func pushToState(notification : NSNotification){
-        println("Push_STATE")
         let state:String = notification.userInfo?["state"] as NSString
         
         //http://stackoverflow.com/questions/24570345/nsclassfromstring-always-returns-nil
         let xibName=state+"ViewController"
-        let controllerName="SpainAppProto."+xibName
+        let controllerName="ArabianApp."+xibName
+        
+        println("controller:\(controllerName)")
         
         var classType: AnyObject.Type=NSClassFromString(controllerName)
         var nsobjectype : UIViewController.Type = classType as UIViewController.Type
         var viewController: UIViewController = nsobjectype(nibName: xibName, bundle: nil)
+        for (key, value) in notification.userInfo! {
+            if !(key == "state") {
+                viewController.setValue(value, forKey:(key as String))
+            }
+        }
         navigationController?.pushViewController(viewController, animated: true)
     }
     //Pop
     func popBack(notification : NSNotification){
-        println("Pop_STATE")
         navigationController.popViewControllerAnimated(true)
     }
 
