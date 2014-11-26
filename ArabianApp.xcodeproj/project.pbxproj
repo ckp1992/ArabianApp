@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F83F0751A2576760005A115 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F83F0741A2576760005A115 /* AppDelegate.swift */; };
+		7F83F0771A2576760005A115 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F83F0761A2576760005A115 /* ViewController.swift */; };
+		7F83F07A1A2576760005A115 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F83F0781A2576760005A115 /* Main.storyboard */; };
+		7F83F07C1A2576760005A115 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F83F07B1A2576760005A115 /* Images.xcassets */; };
+		7F83F07F1A2576760005A115 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F83F07D1A2576760005A115 /* LaunchScreen.xib */; };
+		7F83F08B1A2576760005A115 /* ArabianAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F83F08A1A2576760005A115 /* ArabianAppTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F83F0851A2576760005A115 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F83F0671A2576760005A115 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F83F06E1A2576760005A115;
+			remoteInfo = ArabianApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F83F06F1A2576760005A115 /* ArabianApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArabianApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F83F0731A2576760005A115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F83F0741A2576760005A115 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F83F0761A2576760005A115 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F83F0791A2576760005A115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F83F07B1A2576760005A115 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7F83F07E1A2576760005A115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7F83F0841A2576760005A115 /* ArabianAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArabianAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F83F0891A2576760005A115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F83F08A1A2576760005A115 /* ArabianAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArabianAppTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F83F06C1A2576760005A115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F83F0811A2576760005A115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F83F0661A2576760005A115 = {
+			isa = PBXGroup;
+			children = (
+				7F83F0711A2576760005A115 /* ArabianApp */,
+				7F83F0871A2576760005A115 /* ArabianAppTests */,
+				7F83F0701A2576760005A115 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F83F0701A2576760005A115 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F83F06F1A2576760005A115 /* ArabianApp.app */,
+				7F83F0841A2576760005A115 /* ArabianAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F83F0711A2576760005A115 /* ArabianApp */ = {
+			isa = PBXGroup;
+			children = (
+				7F83F0741A2576760005A115 /* AppDelegate.swift */,
+				7F83F0761A2576760005A115 /* ViewController.swift */,
+				7F83F0781A2576760005A115 /* Main.storyboard */,
+				7F83F07B1A2576760005A115 /* Images.xcassets */,
+				7F83F07D1A2576760005A115 /* LaunchScreen.xib */,
+				7F83F0721A2576760005A115 /* Supporting Files */,
+			);
+			path = ArabianApp;
+			sourceTree = "<group>";
+		};
+		7F83F0721A2576760005A115 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F83F0731A2576760005A115 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F83F0871A2576760005A115 /* ArabianAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F83F08A1A2576760005A115 /* ArabianAppTests.swift */,
+				7F83F0881A2576760005A115 /* Supporting Files */,
+			);
+			path = ArabianAppTests;
+			sourceTree = "<group>";
+		};
+		7F83F0881A2576760005A115 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F83F0891A2576760005A115 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F83F06E1A2576760005A115 /* ArabianApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F83F08E1A2576760005A115 /* Build configuration list for PBXNativeTarget "ArabianApp" */;
+			buildPhases = (
+				7F83F06B1A2576760005A115 /* Sources */,
+				7F83F06C1A2576760005A115 /* Frameworks */,
+				7F83F06D1A2576760005A115 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArabianApp;
+			productName = ArabianApp;
+			productReference = 7F83F06F1A2576760005A115 /* ArabianApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F83F0831A2576760005A115 /* ArabianAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F83F0911A2576760005A115 /* Build configuration list for PBXNativeTarget "ArabianAppTests" */;
+			buildPhases = (
+				7F83F0801A2576760005A115 /* Sources */,
+				7F83F0811A2576760005A115 /* Frameworks */,
+				7F83F0821A2576760005A115 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F83F0861A2576760005A115 /* PBXTargetDependency */,
+			);
+			name = ArabianAppTests;
+			productName = ArabianAppTests;
+			productReference = 7F83F0841A2576760005A115 /* ArabianAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F83F0671A2576760005A115 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "陈鲲鹏";
+				TargetAttributes = {
+					7F83F06E1A2576760005A115 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					7F83F0831A2576760005A115 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 7F83F06E1A2576760005A115;
+					};
+				};
+			};
+			buildConfigurationList = 7F83F06A1A2576760005A115 /* Build configuration list for PBXProject "ArabianApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F83F0661A2576760005A115;
+			productRefGroup = 7F83F0701A2576760005A115 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F83F06E1A2576760005A115 /* ArabianApp */,
+				7F83F0831A2576760005A115 /* ArabianAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F83F06D1A2576760005A115 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F83F07A1A2576760005A115 /* Main.storyboard in Resources */,
+				7F83F07F1A2576760005A115 /* LaunchScreen.xib in Resources */,
+				7F83F07C1A2576760005A115 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F83F0821A2576760005A115 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F83F06B1A2576760005A115 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F83F0771A2576760005A115 /* ViewController.swift in Sources */,
+				7F83F0751A2576760005A115 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F83F0801A2576760005A115 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F83F08B1A2576760005A115 /* ArabianAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F83F0861A2576760005A115 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F83F06E1A2576760005A115 /* ArabianApp */;
+			targetProxy = 7F83F0851A2576760005A115 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F83F0781A2576760005A115 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F83F0791A2576760005A115 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7F83F07D1A2576760005A115 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F83F07E1A2576760005A115 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F83F08C1A2576760005A115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F83F08D1A2576760005A115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F83F08F1A2576760005A115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ArabianApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7F83F0901A2576760005A115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ArabianApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7F83F0921A2576760005A115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ArabianAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArabianApp.app/ArabianApp";
+			};
+			name = Debug;
+		};
+		7F83F0931A2576760005A115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ArabianAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArabianApp.app/ArabianApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F83F06A1A2576760005A115 /* Build configuration list for PBXProject "ArabianApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F83F08C1A2576760005A115 /* Debug */,
+				7F83F08D1A2576760005A115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F83F08E1A2576760005A115 /* Build configuration list for PBXNativeTarget "ArabianApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F83F08F1A2576760005A115 /* Debug */,
+				7F83F0901A2576760005A115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7F83F0911A2576760005A115 /* Build configuration list for PBXNativeTarget "ArabianAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F83F0921A2576760005A115 /* Debug */,
+				7F83F0931A2576760005A115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F83F0671A2576760005A115 /* Project object */;
+}
