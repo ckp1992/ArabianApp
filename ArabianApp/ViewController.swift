@@ -83,27 +83,8 @@ class ViewController: UIViewController {
         self.view.insertSubview(newController.view, atIndex: 0)
         
         if(curController != newController){
-//            if index < curIndex {
-//                offset = -offset
-//            }
-//            var CGOffset:CGFloat = CGFloat(offset)
-//            
-//            newController.view.center.x += CGOffset
-//            UIView.animateWithDuration(
-//                1,
-//                delay: 0,
-//                options: UIViewAnimationOptions.CurveEaseOut,
-//                animations: { () -> Void in
-//                    newController.view.center.x -= 320
-//                    curController.view.transform = CGM
-//                },
-//                completion: { (Bool) -> Void in
-//                    curController.removeFromParentViewController()
-//                    curController.view .removeFromSuperview()
-//
-//            })
-
-            //旧view移出动画
+            
+            //区分动画方向
             if index > curIndex {
                 newController.view.center.x += offset
                 UIView.animateWithDuration(
