@@ -96,25 +96,25 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
-		7F5679531A25A15600536023 /* 1 */ = {
+		7F5679531A25A15600536023 /* WorshipTime */ = {
 			isa = PBXGroup;
 			children = (
 				7F5679541A25A1A600536023 /* WorshipViewController.swift */,
 				7F5679551A25A1A600536023 /* WorshipViewController.xib */,
 			);
-			name = 1;
+			name = WorshipTime;
 			sourceTree = "<group>";
 		};
-		7F5679581A25A5CD00536023 /* 2 */ = {
+		7F5679581A25A5CD00536023 /* WorshipDirection */ = {
 			isa = PBXGroup;
 			children = (
 				7F5679591A25A64B00536023 /* WorShipDirectionViewController.swift */,
 				7F56795A1A25A64B00536023 /* WorShipDirectionViewController.xib */,
 			);
-			name = 2;
+			name = WorshipDirection;
 			sourceTree = "<group>";
 		};
-		7F56795D1A25A6EA00536023 /* 3 */ = {
+		7F56795D1A25A6EA00536023 /* Muslim */ = {
 			isa = PBXGroup;
 			children = (
 				7F5679631A25A81100536023 /* MuslimStoryViewController.swift */,
@@ -122,7 +122,7 @@
 				7F5679741A25FB0700536023 /* StoryDetailViewController.swift */,
 				7F5679751A25FB0700536023 /* StoryDetailViewController.xib */,
 			);
-			name = 3;
+			name = Muslim;
 			sourceTree = "<group>";
 		};
 		7F56795E1A25A72000536023 /* Base */ = {
@@ -133,7 +133,7 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
-		7F5679671A25A84900536023 /* 4 */ = {
+		7F5679671A25A84900536023 /* Mosque */ = {
 			isa = PBXGroup;
 			children = (
 				7F5679691A25A8FD00536023 /* MosqueViewController.swift */,
@@ -141,16 +141,16 @@
 				7F5679781A25FF3500536023 /* MosqueDetailViewController.swift */,
 				7F5679791A25FF3500536023 /* MosqueDetailViewController.xib */,
 			);
-			name = 4;
+			name = Mosque;
 			sourceTree = "<group>";
 		};
-		7F5679681A25A85200536023 /* 5 */ = {
+		7F5679681A25A85200536023 /* About */ = {
 			isa = PBXGroup;
 			children = (
 				7F56796D1A25A93200536023 /* AboutViewController.swift */,
 				7F56796E1A25A93200536023 /* AboutViewController.xib */,
 			);
-			name = 5;
+			name = About;
 			sourceTree = "<group>";
 		};
 		7F83F0661A2576760005A115 = {
@@ -176,11 +176,11 @@
 			children = (
 				7F56795E1A25A72000536023 /* Base */,
 				7F5679521A2587B700536023 /* Util */,
-				7F5679681A25A85200536023 /* 5 */,
-				7F5679671A25A84900536023 /* 4 */,
-				7F56795D1A25A6EA00536023 /* 3 */,
-				7F5679581A25A5CD00536023 /* 2 */,
-				7F5679531A25A15600536023 /* 1 */,
+				7F5679681A25A85200536023 /* About */,
+				7F5679671A25A84900536023 /* Mosque */,
+				7F56795D1A25A6EA00536023 /* Muslim */,
+				7F5679581A25A5CD00536023 /* WorshipDirection */,
+				7F5679531A25A15600536023 /* WorshipTime */,
 				7F83F0741A2576760005A115 /* AppDelegate.swift */,
 				7F83F0761A2576760005A115 /* ViewController.swift */,
 				7F83F0781A2576760005A115 /* Main.storyboard */,

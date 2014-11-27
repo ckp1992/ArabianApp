@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        NSLog("---FFF--%@",self.view.subviews)
+//        NSLog("---FFF--%@",self.view.subviews)
     }
     
     func initChildViewControllers(){
