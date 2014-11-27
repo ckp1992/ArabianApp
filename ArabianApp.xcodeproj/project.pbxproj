@@ -23,6 +23,7 @@
 		7F5679771A25FB0700536023 /* StoryDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5679751A25FB0700536023 /* StoryDetailViewController.xib */; };
 		7F56797A1A25FF3500536023 /* MosqueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5679781A25FF3500536023 /* MosqueDetailViewController.swift */; };
 		7F56797B1A25FF3500536023 /* MosqueDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5679791A25FF3500536023 /* MosqueDetailViewController.xib */; };
+		7F5679861A26F9BA00536023 /* PrayTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5679851A26F9BA00536023 /* PrayTime.m */; };
 		7F83F0751A2576760005A115 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F83F0741A2576760005A115 /* AppDelegate.swift */; };
 		7F83F0771A2576760005A115 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F83F0761A2576760005A115 /* ViewController.swift */; };
 		7F83F07A1A2576760005A115 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F83F0781A2576760005A115 /* Main.storyboard */; };
@@ -58,6 +59,9 @@
 		7F5679751A25FB0700536023 /* StoryDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryDetailViewController.xib; sourceTree = "<group>"; };
 		7F5679781A25FF3500536023 /* MosqueDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MosqueDetailViewController.swift; sourceTree = "<group>"; };
 		7F5679791A25FF3500536023 /* MosqueDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MosqueDetailViewController.xib; sourceTree = "<group>"; };
+		7F5679801A26D94B00536023 /* ArabianApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArabianApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		7F5679841A26F9BA00536023 /* PrayTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrayTime.h; sourceTree = "<group>"; };
+		7F5679851A26F9BA00536023 /* PrayTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrayTime.m; sourceTree = "<group>"; };
 		7F83F06F1A2576760005A115 /* ArabianApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArabianApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F83F0731A2576760005A115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F83F0741A2576760005A115 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 		7F5679521A2587B700536023 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				7F5679801A26D94B00536023 /* ArabianApp-Bridging-Header.h */,
+				7F56797C1A26D45100536023 /* PrayTimes */,
 				7F5679501A25879200536023 /* ApplicationContext.swift */,
 			);
 			name = Util;
@@ -151,6 +157,15 @@
 				7F56796E1A25A93200536023 /* AboutViewController.xib */,
 			);
 			name = About;
+			sourceTree = "<group>";
+		};
+		7F56797C1A26D45100536023 /* PrayTimes */ = {
+			isa = PBXGroup;
+			children = (
+				7F5679841A26F9BA00536023 /* PrayTime.h */,
+				7F5679851A26F9BA00536023 /* PrayTime.m */,
+			);
+			path = PrayTimes;
 			sourceTree = "<group>";
 		};
 		7F83F0661A2576760005A115 = {
@@ -331,6 +346,7 @@
 				7F56796F1A25A93200536023 /* AboutViewController.swift in Sources */,
 				7F5679511A25879200536023 /* ApplicationContext.swift in Sources */,
 				7F5679651A25A81100536023 /* MuslimStoryViewController.swift in Sources */,
+				7F5679861A26F9BA00536023 /* PrayTime.m in Sources */,
 				7F83F0751A2576760005A115 /* AppDelegate.swift in Sources */,
 				7F56796B1A25A8FD00536023 /* MosqueViewController.swift in Sources */,
 				7F56795B1A25A64B00536023 /* WorShipDirectionViewController.swift in Sources */,
@@ -459,6 +475,7 @@
 				INFOPLIST_FILE = ArabianApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ArabianApp/ArabianApp-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -469,6 +486,7 @@
 				INFOPLIST_FILE = ArabianApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ArabianApp/ArabianApp-Bridging-Header.h";
 			};
 			name = Release;
 		};

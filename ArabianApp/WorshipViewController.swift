@@ -12,7 +12,9 @@ class WorshipViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//        var p:PrayTime = PrayTime()
+//        var array = p.getDatePrayerTimes(2014, andMonth: 11, andDay: 27, andLatitude: 39, andLongitude: 116, andtimeZone: 8)
+//        NSLog("--%@",array)
         // Do any additional setup after loading the view.
     }
 
