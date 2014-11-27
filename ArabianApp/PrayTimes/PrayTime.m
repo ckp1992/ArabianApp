@@ -484,7 +484,7 @@ double JDate;      // Julian date
     calcMethod = methodID;
 }
 
-// set the juristic method for Asr
+// set the juristic method for Asr      //时间标准:Shafii(standard)时间=0，夏令时间(Hanafi)= 1
 -(void)setAsrMethod: (int)methodID {
     if (methodID < 0 || methodID > 1)
         return;
